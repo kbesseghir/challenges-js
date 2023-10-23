@@ -48,3 +48,34 @@ const member = {
 
   console.log(`My Hobbies: ${h1} And ${h3}`);
   // My Hobbies: Reading And Programming
+
+
+  const game = {
+    title: "YS",
+    developer: "Falcom",
+    releases: {
+      "Oath In Felghana": ["USA", "Japan"],
+      "Ark Of Napishtim": {
+        US: "20 USD",
+        JAP: "10 USD",
+      },
+      Origin: "30 USD",
+    },
+  };
+  
+  // Write Your Destructuring Assignment/s Here
+  ({title:t}=game)
+  console.log(`My Favourite Games Style Is ${t} Style`);
+  // My Favourite Games Style Is YS Style
+  ({developer:d}=game)
+
+ 
+  const or = game.releases.Origin;
+  console.log(`And I Love ${d} Games`);
+  // And I Love Falcom Games
+
+  
+
+  // Ark Of Napishtim Price in Japan Is 10 USD
+  console.log(`Origin Price Is ${or}`);
+  // Origin Price Is 30 USD
