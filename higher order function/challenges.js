@@ -12,3 +12,17 @@ if (typeof elem === "string") {
 
 console.log(total)
 console.log(result)
+
+
+
+
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+
+ result = numsAndStrings.filter(function(elem){
+   return typeof elem !== "string"
+ }).map(function(elem){
+    return -elem
+ });
+ console.log(result)
+
+// [-1, -10, 10, 20, -5, -3]
