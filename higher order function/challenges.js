@@ -26,3 +26,11 @@ let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
  console.log(result)
 
 // [-1, -10, 10, 20, -5, -3]
+
+
+
+let nums = [2, 12, 11, 5, 10, 1, 99];
+result = nums.reduce(function (acc,curr){
+   return  (curr % 2 ==0)? acc*curr : acc+curr
+})
+console.log(result)
