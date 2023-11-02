@@ -43,7 +43,7 @@ class Tablet extends Phone {
   let TabletTwo = new Tablet("Nokia", 350450650, 800, 10.5);
   let TabletThree = new Tablet("LG", 250450650, 650);
   
-  console.log(`${TabletOne.fullDetails()}`);
+  console.log(TabletOne.fullDetails());
   // iPad Serial is 100200300 And Size Is 12.9
   
   console.log(`${TabletTwo.fullDetails()}`);
@@ -51,3 +51,68 @@ class Tablet extends Phone {
   
   console.log(`${TabletThree.fullDetails()}`);
   // LG Serial is 250450650 And Size Is Unknown
+
+
+
+//###############################################
+
+// Edit The Class
+class User {
+    
+    constructor(username, card) {
+      this.u = username;
+      this.c = card;
+    }
+    showData() {
+        return `Hello ${this.u} Your Credit Card Number Is ${this._formatCard(this._card)}`;
+      }
+  }
+  
+  // Do Not Edit Anything Below
+  
+  let userOne = new User("Osama", "1234-5678-1234-5678");
+  let userTwo = new User("Ahmed", "1234567812345678");
+  let userThree = new User("Ghareeb", 1234567812345678);
+  
+  console.log(userOne.showData);
+  // Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
+  
+  console.log(userTwo.showData);
+  // Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
+  
+  console.log(userThree.showData);
+  // Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+  
+  console.log(userOne.c); // Prevent Accessing To Card Property Here
+  // Undefined
+
+
+
+
+//###############################################
+
+
+  let myStr = "Elzero";
+String.prototype.addLove = ()=> {return "Elzero love"} ;
+  console.log(myStr.addLove());
+
+
+
+//###############################################
+
+// const myObj = {
+//   username: "Elzero",
+//   id: 100,
+//   score: 1000,
+//   country: "Egypt",
+// };
+
+// // Write Your Code Here
+
+// myObj.score = 500;
+
+// for (let prop in myObj) {
+//   console.log(`${prop} => ${myObj[prop]}`);
+// }
+
+// console.log(myObj);
