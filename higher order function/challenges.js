@@ -34,3 +34,15 @@ result = nums.reduce(function (acc,curr){
    return  (curr % 2 ==0)? acc*curr : acc+curr
 })
 console.log(result)
+
+//################################
+
+function aVeryBigSum(ar) {
+   let sum = BigInt(0); // Initialize sum as a BigInt
+
+    for (let i = 0; i < ar.length; i++) {
+        sum += BigInt(ar[i]); // Add each element to the sum as a BigInt
+    }
+
+    return sum;
+}
