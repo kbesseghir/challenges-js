@@ -116,3 +116,37 @@ for (let prop in myObj) {
 }
 
 console.log(myObj);
+
+
+
+
+
+
+
+
+function plusMinus(arr) {
+  let tab = [0, 0, 0];
+  let ratio =0;
+
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+          tab[0]++;
+      } else if (arr[i] < 0) {
+          tab[1]++;
+      } else {
+          tab[2]++;
+      }
+  }
+  console.log(tab[0]);
+  for (let i = 0; i < tab.length; i++) {
+
+      // Calculate the ratio and update the array
+      return tab[i]/arr.length;
+
+
+  }
+
+  return tab;
+}const array = [-4, 3, -9, 0, 4, 1];
+
+console.log(plusMinus(array));
