@@ -64,3 +64,26 @@ if ((theAge>10)&&(theAge<100)) {
   ageInTime(110); // Age Out Of Range
   ageInTime(38); // Months Example => 456 Months
 
+
+  //##############################################################
+
+
+
+  function createSelectBox(startYear, endYear) {
+   for (var i = startYear;i < endYear+1 ; i++) {
+ 
+ var newElement = document.createElement('option');
+
+ // 2. Set attributes (optional)
+ newElement.setAttribute('value', i);
+
+ // 3. Insert content (optional)
+ newElement.innerHTML = `<p>${i}</p>`;
+
+ // 4. Append the new element to the existing content
+ var existingContent = document.getElementById('elem');
+ existingContent.appendChild(newElement);
+   }
+
+  }
+  createSelectBox(2000, 2021);
