@@ -43,3 +43,24 @@ else if(operation == null){
   calculate(20, 30, 'add'); // 50
   calculate(20, 30, 'subtract'); // -10
   calculate(20, 30, 'multiply'); // 600
+
+//##############################################################
+function ageInTime(theAge) {
+
+if ((theAge>10)&&(theAge<100)) {
+    months = theAge*12
+    weeks=theAge * 52
+    days = theAge *365
+    hours = days*24
+    mins = hours*60
+    sec=mins*60
+    console.log(`${months} monthes  \n ${days} days \n ${hours} hours \n ${mins} mins \n ${sec} sec `)
+
+  }
+  else(console.log('Age Out Of Range'))
+}
+  
+  // Needed Output
+  ageInTime(110); // Age Out Of Range
+  ageInTime(38); // Months Example => 456 Months
+
