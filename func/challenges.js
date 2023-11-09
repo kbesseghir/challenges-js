@@ -87,3 +87,22 @@ if ((theAge>10)&&(theAge<100)) {
 
   }
   createSelectBox(2000, 2021);
+  //####
+
+
+ function multiply(...num){
+   var result =1
+ 
+    for (var i=0; i<num.length; i++){
+      if (typeof num[i] === 'number'){
+        intg =parseInt(num[i])
+        result *=intg
+        
+    }
+  }
+  console.log(result)
+
+ }
+  multiply(10, 20); // 200
+  multiply( 'a',10.6, 30); // 300
+  multiply(100.5, 10); // 1000
