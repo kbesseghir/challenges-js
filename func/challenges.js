@@ -106,3 +106,32 @@ if ((theAge>10)&&(theAge<100)) {
   multiply(10, 20); // 200
   multiply( 'a',10.6, 30); // 300
   multiply(100.5, 10); // 1000
+
+
+
+
+  //$$$$$$$$$$$$$$$$$$$$$$
+
+
+  function checkStatus(a, b, c) {
+    tab=[a,b,c];
+    for(let i=0;i<tab.length;i++){
+      if (typeof tab[i]==='string'){
+       var str=tab[i]
+      }
+      else if (typeof tab[i]==='number'){
+       var num=tab[i];
+      }
+      else if (typeof tab[i]==='boolean'){
+        var boo = arguments[i] ? 'Available For Hire' : 'Not Available For Hire';    }
+        
+      }
+      console.log(`hello ${str},ur age is ${num},u are ${boo}`)
+  }
+  console.log(`hi`)
+
+  // Needed Output
+  checkStatus("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+  checkStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+  checkStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+  checkStatus(false, "Osama", 38); // "Helo Osama, Your Age Is 38, You Are Not Available For Hir
