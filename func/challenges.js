@@ -135,3 +135,50 @@ if ((theAge>10)&&(theAge<100)) {
   checkStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
   checkStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
   checkStatus(false, "Osama", 38); // "Helo Osama, Your Age Is 38, You Are Not Available For Hir
+
+
+  ////////////////////////////////////////////////////////////////////////
+
+  function getDetails(zName, zAge, zCountry) {
+
+   var firstname,lastName,age,country,parts
+   
+
+    function namePattern(zName) {
+      parts = zName.split(' ');
+       firstname = parts[0];
+       lastName = parts[parts.length - 1][0];
+      // Write Your Code Here
+      // Osama Mohamed => Osama M.
+      // Ahmed ali => Ahmed A.
+    }
+    function ageWithMessage(zAge) {
+       age = zAge.match(/\d+/);
+      }
+
+      // Write Your Code Here
+      // 38 Is My Age => Your Age Is 38
+      // 32 Is The Age => Your Age Is 32
+    
+    function countryTwoLetters(zCountry) {
+      // Write Your Code Here
+       country =zCountry.slice(0,2)
+      // Egypt => You Live In EG
+      // Syria => You Live In SY
+    }
+    function fullDetails() {
+      countryTwoLetters(zCountry)
+      ageWithMessage(zAge)
+      namePattern(zName) 
+
+
+      console.log(`ur name is ${firstname} ${lastName},ur age is ${age},u live in ${country}`);
+    }
+    return fullDetails(); // Do Not Edit This
+  }
+  
+getDetails("Osama Mohamed", "38 Is My Age", "Egypt");
+  // Hello Osama M., Your Age Is 38, You Live In EG
+  
+getDetails("Ahmed ali", "32 Is The Age", "Syria");
+  // Hello Ahmed A., Your Age Is 32, You Live In SY
